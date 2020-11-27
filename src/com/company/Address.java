@@ -1,6 +1,6 @@
 package com.company;
 
-public class Address <T> {
+public class Address {
 
     private  Object city;
     private Object street;
@@ -12,20 +12,44 @@ public class Address <T> {
         this.number = number;
     }
 
-    public T getcity() {
-        return (T) city;
+    public Object getCity() {
+        return city;
     }
 
-    public T getstreet() {
-        return (T) street;
+    public void setCity(Object city) {
+        this.city = city;
     }
 
-    public int getnumber() {
-        return (int) number;
+    public Object getStreet() {
+        return street;
     }
 
-    public void printinfo(){
-        System.out.println(city + " " + street + " " + number);
+    public void setStreet(Object street) {
+        this.street = street;
     }
+
+    public int getNumber() {
+        return number;
+    }
+
+    public void setNumber(int number) {
+        this.number = number;
+    }
+
+    //    public T getcity() {
+//        return (T) city;
+//    }
+//
+//    public T getstreet() {
+//        return (T) street;
+//    }
+//
+//    public int getnumber() {
+//        return (int) number;
+//    }
+//
+//    public void printinfo(){
+//        System.out.println(city + " " + street + " " + number);
+//    }
 
 }

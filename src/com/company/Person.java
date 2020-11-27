@@ -1,6 +1,6 @@
 package com.company;
 
-public class Person <T> {
+public class Person  {
 
     private Object name;
     private Object lastName;
@@ -12,17 +12,42 @@ public class Person <T> {
         this.address = address;
     }
 
-    public T getname() {
-        return (T) name;
+    public Object getName() {
+        return name;
     }
 
-    public T getlastName() {
-        return (T) lastName;
+    public void setName(Object name) {
+        this.name = name;
     }
 
-    public Address getaddress() {
-        return (Address) address;
+    public Object getLastName() {
+        return lastName;
     }
+
+    public void setLastName(Object lastName) {
+        this.lastName = lastName;
+    }
+
+    public Address getAddress() {
+        return address;
+    }
+
+    public void setAddress(Address address) {
+        this.address = address;
+    }
+
+    //    public T getname() {
+//        return (T) name;
+//    }
+//
+//    public T getlastName() {
+//        return (T) lastName;
+//    }
+//
+//    public Address getaddress() {
+//        return (Address) address;
+//    }
+
 
     @Override
     public String toString() {

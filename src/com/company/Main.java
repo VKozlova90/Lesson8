@@ -26,10 +26,12 @@ public class Main {
         for (Person person : list)
             System.out.println(person);
 
+        System.out.println();
+
         List<String> res = list
                 .stream()
-                .filter (Person -> Person.getname()!=null && Person.getlastName()!=null && Person.getaddress()!=null)
-                .sorted((n1, n2) -> n1.getaddress().getnumber() - n1.getaddress().getnumber())
+                .filter (Person -> Person.getName()!=null && Person.getLastName()!=null && Person.getAddress()!=null)
+                .sorted((n1, n2) -> n1.getAddress().getNumber() - n1.getAddress().getNumber())
                 .map(str -> str.toString())
                 .collect(Collectors.toList());
 
