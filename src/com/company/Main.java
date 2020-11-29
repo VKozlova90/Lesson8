@@ -8,11 +8,16 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Person person1 = new Person("Ann", "Rout", new Address ("London", "Avenu", 8));
-        Person person2 = new Person("Stef", "Smit", new Address("Boston", "Avenu", 1));
-        Person person3 = new Person("Tom", "Hardy", new Address("NYork", "Avenu", 5));
-        Person person4 = new Person(null, "Girov", new Address("London", "Avenu", 3));
-        Person person5 = new Person("Ann", null, new Address("Minsk", "Avenu", 13));
+        Person person1 = new Person("Ann", "Rout",
+                new Address ("London", "Baker Street", 8));
+        Person person2 = new Person("Stef", "Smit",
+                new Address("Boston", "Acorn Street", 1));
+        Person person3 = new Person("Tom", "Hardy",
+                new Address("NYork", "Park Avenue", 5));
+        Person person4 = new Person(null, "Girov",
+                new Address("London", "Bond Street", 3));
+        Person person5 = new Person("Ann", null,
+                new Address("Minsk", "Brovki", 13));
         Person person6 = new Person("Olga", "Stepanova", null);
 
         ArrayList<Person> list = new ArrayList<>();
