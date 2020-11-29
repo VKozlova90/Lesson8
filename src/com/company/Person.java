@@ -36,19 +36,6 @@ public class Person  {
         this.address = address;
     }
 
-    //    public T getname() {
-//        return (T) name;
-//    }
-//
-//    public T getlastName() {
-//        return (T) lastName;
-//    }
-//
-//    public Address getaddress() {
-//        return (Address) address;
-//    }
-
-
     @Override
     public String toString() {
         return "Person{" +

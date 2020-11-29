@@ -8,7 +8,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Person person1 = new Person("Ann", "Rout", new Address("London", "Avenu", 8));
+        Person person1 = new Person("Ann", "Rout", new Address ("London", "Avenu", 8));
         Person person2 = new Person("Stef", "Smit", new Address("Boston", "Avenu", 1));
         Person person3 = new Person("Tom", "Hardy", new Address("NYork", "Avenu", 5));
         Person person4 = new Person(null, "Girov", new Address("London", "Avenu", 3));
@@ -31,7 +31,7 @@ public class Main {
         List<String> res = list
                 .stream()
                 .filter (Person -> Person.getName()!=null && Person.getLastName()!=null && Person.getAddress()!=null)
-                .sorted((n1, n2) -> n1.getAddress().getNumber() - n1.getAddress().getNumber())
+                .sorted((n1, n2) -> n1.getAddress().getNumber() - n2.getAddress().getNumber())
                 .map(str -> str.toString())
                 .collect(Collectors.toList());
 
