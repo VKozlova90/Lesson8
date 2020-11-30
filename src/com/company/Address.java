@@ -2,8 +2,8 @@ package com.company;
 
 public class Address {
 
-    private  Object city;
-    private Object street;
+    private  String city;
+    private String street;
     private int number;
 
     public Address(String city, String street, int number) {
@@ -12,19 +12,19 @@ public class Address {
         this.number = number;
     }
 
-    public Object getCity() {
+    public String getCity() {
         return city;
     }
 
-    public void setCity(Object city) {
+    public void setCity(String city) {
         this.city = city;
     }
 
-    public Object getStreet() {
+    public String getStreet() {
         return street;
     }
 
-    public void setStreet(Object street) {
+    public void setStreet(String street) {
         this.street = street;
     }
 
@@ -34,6 +34,15 @@ public class Address {
 
     public void setNumber(int number) {
         this.number = number;
+    }
+
+    @Override
+    public String toString() {
+        return "Address{" +
+                "city='" + city + '\'' +
+                ", street='" + street + '\'' +
+                ", number=" + number +
+                '}';
     }
 
     //    public T getcity() {
